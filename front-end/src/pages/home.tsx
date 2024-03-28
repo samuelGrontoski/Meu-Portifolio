@@ -1,29 +1,22 @@
-import { AiFillGithub } from "react-icons/ai";
-import { AiFillLinkedin } from "react-icons/ai";
-import { AiFillInstagram } from "react-icons/ai";
+// Components
+import { SocialButton } from "../components/socialButton";
+
+import { AiOutlineMail, AiFillGithub, AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai";
 
 export function Home() {
     return (
-        <div className="bg-cinza-200 w-screen h-screen">
+        <div className="bg-bg w-screen h-screen">
             <header>
-
+                <nav className="fixed top-12 right-40 flex justify-items-center content-start gap-6">
+                    <SocialButton link="mailto:contatosamuelgrontoski@gmail.com" icon={AiOutlineMail} />
+                    <SocialButton link="https://github.com/samuelGrontoski" icon={AiFillGithub} />
+                    <SocialButton link="https://www.linkedin.com/in/samuel-grontoski/" icon={AiFillLinkedin} />
+                    <SocialButton link="https://www.instagram.com/samuel_grontoski/" icon={AiOutlineInstagram} />
+                </nav>
             </header>
             <body>
-                <main className="">
-                    <div className="grid justify-items-center content-start bg-cinza-300 max-w-[50vh] w-full h-[70vh] fixed top-24 right-24 overflow-hidden rounded-md shadow-lg gap-y-2 p-5">
-                        <a href="https://github.com/samuelGrontoski" className="w-64 h-12 bg-cinza-100 shadow-md flex items-center px-8 gap-2 rounded-md">
-                            <AiFillGithub className="w-8 text-2xl"/>
-                            <p className="text-sm">/samuelGrontoski</p>
-                        </a>
-                        <a href="https://www.linkedin.com/in/samuel-grontoski/" className="w-64 h-12 bg-cinza-100 shadow-md flex items-center px-8 gap-2 rounded-md">
-                            <AiFillLinkedin className="w-8 text-2xl"/>
-                            <p className="text-sm">/samuel-grontoski</p>
-                        </a>
-                        <a href="https://www.instagram.com/samuel_grontoski/" className="w-64 h-12 bg-cinza-100 shadow-md flex items-center px-8 gap-2 rounded-md">
-                            <AiFillInstagram className="w-8 text-2xl"/>
-                            <p className="text-sm">/samuel_grontoski</p>
-                        </a>
-                    </div>
+                <main>
+                    <div className="fixed inset-y-0 left-40 w-5 bg-cinza-500" />
 
                 </main>
             </body>
