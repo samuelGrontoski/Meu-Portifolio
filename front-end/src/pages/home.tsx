@@ -11,7 +11,7 @@ export function Home() {
     return (
         <div className="bg-bg w-screen h-screen">
             <header>
-                <nav className="fixed top-12 right-36 flex justify-items-center content-start gap-6">
+                <nav className="fixed top-12 right-24 flex justify-items-center content-start gap-6">
                     <SocialButton link="mailto:contatosamuelgrontoski@gmail.com" icon={AiOutlineMail} />
                     <SocialButton link="https://github.com/samuelGrontoski" icon={AiFillGithub} />
                     <SocialButton link="https://www.linkedin.com/in/samuel-grontoski/" icon={AiFillLinkedin} />
@@ -21,15 +21,18 @@ export function Home() {
             <body>
                 <main>
                     <div className="animate-pulse">
-                        <img src={top} alt="barra superior" className="w-52 fixed left-20 top-0 rounded-lg"/>
-                        <img src={botton} alt="barra inferior" className="w-52 fixed right-20 bottom-0 rounded-lg"/>
+                        <img src={top} alt="barra superior" className="w-60 fixed left-12 top-0 rounded-lg"/>
+                        <img src={botton} alt="barra inferior" className="w-60 fixed right-12 bottom-0 rounded-lg"/>
                     </div>
-                    <button className="fixed left-28 top-8 w-[64px] hover:scale-110 transition duration-200">
+                    <button className="fixed left-20 top-8 w-[64px] hover:scale-110 transition duration-200">
                         <div className="flex justify-start"> 
                             <img src={logo} alt="logo"/>
                         </div>
                     </button>
                 </main>
+                <footer className="text-cinza-300 fixed bottom-8 right-20 text-sm">
+                    ©2024 Samuel Grontoski
+                </footer>
             </body>
         </div>
     )
