@@ -4,18 +4,16 @@ import { SocialButton } from "../components/socialButton";
 // Imagens
 import logo from "../assets/logo.svg"
 import pikachu_running from "../assets/pikachu-running.gif"
-import top from "../assets/top.svg"
-import botton from "../assets/botton.svg"
 import { AiOutlineMail, AiFillGithub, AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai";
 
 export function Home() {
     return (
         <div className="bg-bg w-screen h-screen">
             <header className="w-screen inline-flex justify-between p-5">
-                <div className="w-[64px] hover:scale-110 transition duration-200">
+                <figure className="w-[64px] hover:scale-110 transition duration-200">
                     <img src={logo} alt="logo" />
-                </div>
-                <nav className="flex justify-items-center content-start gap-6">
+                </figure>
+                <nav className="md:flex justify-items-center content-start gap-6 hidden">
                     <SocialButton link="mailto:contatosamuelgrontoski@gmail.com" icon={AiOutlineMail} />
                     <SocialButton link="https://github.com/samuelGrontoski" icon={AiFillGithub} />
                     <SocialButton link="https://www.linkedin.com/in/samuel-grontoski/" icon={AiFillLinkedin} />
