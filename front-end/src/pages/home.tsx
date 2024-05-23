@@ -13,7 +13,7 @@ export function Home() {
                 <figure className="w-[64px] hover:scale-110 transition duration-200">
                     <img src={logo} alt="logo" />
                 </figure>
-                <nav className="md:flex justify-items-center content-start gap-6 hidden">
+                <nav className="justify-items-center content-start gap-6 hidden md:flex">
                     <SocialButton link="mailto:contatosamuelgrontoski@gmail.com" icon={AiOutlineMail} />
                     <SocialButton link="https://github.com/samuelGrontoski" icon={AiFillGithub} />
                     <SocialButton link="https://www.linkedin.com/in/samuel-grontoski/" icon={AiFillLinkedin} />
@@ -30,9 +30,9 @@ export function Home() {
 
                     </button>
                 </main>
-                <footer className="inline-flex p-5 absolute inset-x-0 bottom-0">
+                <footer className="flex justify-between items-end p-5 absolute inset-x-0 bottom-0 w-screen">
                     <img className="w-20" src={pikachu_running} alt="jolton_pokemon gif" />
-                    <p className="text-cinza-300 text-sm absolute right-5 bottom-5">©2024 Samuel Grontoski</p>
+                    <p className="text-cinza-300 text-sm">©2024 Samuel Grontoski</p>
                 </footer>
             </body>
         </div>
