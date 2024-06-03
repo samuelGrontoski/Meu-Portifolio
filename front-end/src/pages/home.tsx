@@ -9,7 +9,7 @@ import { AiOutlineMail, AiFillGithub, AiFillLinkedin, AiOutlineInstagram } from 
 export function Home() {
     return (
         <div className="bg-bg w-screen h-screen">
-            <header className="w-screen inline-flex justify-between p-5">
+            <head className="w-screen inline-flex justify-between p-5">
                 <figure className="w-[64px] hover:scale-110 transition duration-200">
                     <img src={logo} alt="logo" />
                 </figure>
@@ -19,7 +19,7 @@ export function Home() {
                     <SocialButton link="https://www.linkedin.com/in/samuel-grontoski/" icon={AiFillLinkedin} />
                     <SocialButton link="https://www.instagram.com/samuel_grontoski/" icon={AiOutlineInstagram} />
                 </nav>
-            </header>
+            </head>
             <body>
                 <main>
                     {/* <div className="animate-pulse">
