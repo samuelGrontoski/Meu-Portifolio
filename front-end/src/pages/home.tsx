@@ -26,9 +26,8 @@ export function Home() {
                         <img src={top} alt="barra superior" className="w-60 fixed left-12 top-0 rounded-lg"/>
                         <img src={botton} alt="barra inferior" className="w-60 fixed right-12 bottom-0 rounded-lg"/>
                     </div> */}
-                    <button className="fixed left-20 top-8 w-[64px] hover:scale-110 transition duration-200">
+                    <div className="fixed left-20 top-8 w-[64px] hoer:scale-110 transition duration-200" />
 
-                    </button>
                 </main>
                 <footer className="flex justify-between items-end p-5 absolute inset-x-0 bottom-0 w-screen">
                     <img className="w-20" src={pikachu_running} alt="jolton_pokemon gif" />
